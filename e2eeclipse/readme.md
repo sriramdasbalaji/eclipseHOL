@@ -19,7 +19,8 @@ In this task you will install the [Exploratory Testing extension](https://market
 1. Click on the gear icon to open the settings. Select **Connected** and enter your VSTS account URL and click Next. Then select your team project and expand it and select the default team (which should have the same name as your team project). Click Save.
 
     ![Connect to VSTS](images/connect-to-vsts.png)
-
+    
+     ![Connect to VSTS](images/connect-to-vsts2.png)
     {% include note.html content= "Your team name may be different." %}
 
 ## Log a Bug using the Exploratory Test Extension
@@ -35,6 +36,7 @@ In this task you will start a test session, discover a bug in the MyShuttle app 
 1. Enter `http://{your web app name}/myshuttledev` in the toolbar to navigate to the application. Enter `fred` for the username and `fredpassword` for the password and click **Log In**.
 
     ![Log in to the app](images/login.png)
+
 
 1. On the Dashboard page, click **Access Your Fare History** to navigate to the fare history page.
 
