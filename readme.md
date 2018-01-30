@@ -218,13 +218,8 @@ In this exercise, we will setup a CD pipeline to deploy the web application to a
 
     We could configure *Continuous Deployment* to deploy the web app is updated when a new image is pushed to the registry, within the Azure portal itself. However, setting up a VSTS CD pipeline will provide more flexibility and additional controls (approvals, release gates, etc.) for application deployment
 
-1. Back in VSTS, select **Releases** from the **Build and Release**hub. Select **+** and then **Create Release Definition**
-
-1. Select **Pipeline**. Click **+Add** to add the artifacts. Select **Build** for the source type. Select the **Project**, **Source** and the **Default version**.  Finally select **Add** to save the settings
-
-1. Select the **Azure App Service Deployment** template and click **Apply**.
-
-    ![VSTS Add Artifact](images/vsts-cd-addartifact.png)
+1. Back in VSTS, select **Releases** from the **Build and Release**hub. Select the Release definition and click edit
+     ![editrelease](images/editrelease.png)
 
 1. Open the environment. Select **Environment 1** and configure as follows
 
