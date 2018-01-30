@@ -271,7 +271,9 @@ In this exercise, we will setup a CD pipeline to deploy the web application to a
     ````SQL
     mysql -h myshuttle-1-mysqldbserver.mysql.database.azure.com -u mysqldbuser@myshuttle-1-mysqldbserver -p < mydbscript.script
     ````
-    Enter the password that you specified during provisioning the database
+
+
+    Turn ON **Allow access to azure services** in **Connection Security settings** Enter the password that you specified during provisioning the database
 
     ![Creating DB](images/createdatabase.png)
 
