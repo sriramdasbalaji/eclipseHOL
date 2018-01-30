@@ -61,7 +61,7 @@ In this lab, you will
 
 ## Exercise 1: Setting up VSTS project
 
-1. We will use the [VSTS Demo Data Generator](https://vstsdemobuildertest.azurewebsites.net/?TemplateId=77373&Name=myshuttledocker){:target="_blank"} to provision a project on your VSTS account.
+1. We will use the [VSTS Demo Data Generator](https://vstsdemogenerator.azurewebsites.net/?TemplateId=77373&Name=myshuttledocker){:target="_blank"} to provision a project on your VSTS account.
 
    ![VSTS Demo Generator](images/vstsdemogen.png)
 
@@ -85,7 +85,7 @@ Having setup Team Services project, we will now log in to the virtual machine an
 
 1. Click on the Eclipse icon in the toolbar to open the Eclipse Java IDE.
 
-    ![Click Eclipse in the Toolbar](images/click-eclipse.png "Click Eclipse in the Toolbar")
+    ![Click Eclipse in the Toolbar](images/click-eclipse2.png "Click Eclipse in the Toolbar")
 
 1. The first time you run Eclipse, it will prompt you to choose a workspace. Specify a folder and click on the box **"Use this as the default and do not ask again"** if you want to Eclipse use that as default and not prompt you again.
 
@@ -132,7 +132,7 @@ Next, we will clone the VSTS Git repository to a local Git repository and import
 
 1. In the **Team Explorer** panel, choose **Git Repositories**. This will list all the Git repositories in the project.
 
-1. Right-click the **MyShuttle** repo in the team project and select **Import Repository**
+1. Right-click the **MyShuttleDocker** repo in the team project and select **Import Repository**
 
     ![Select the VSTS repo](images/eclipse-select-repo.png "Select the VSTS repo")
 
@@ -164,11 +164,11 @@ In this task you will configure the VSTS build definition that will build and pu
 
 1. Open the [**Azure Portal**](https://portal.azure.com){:target="_blank"} in a separate tab
 
-1. Select **+New** and search for **Azure Container**. Select **Create**. In the *Create Container Registry* dialog, enter a name for the service, select the resource group, location, etc., and select **Create**.
+1. Select **+New** and search for **Azure Container**. Select **Create**. In the *Create Container Registry* dialog, enter a name for the service, select the resource group, location, etc., and Enable **Admin user**,  select **Create**.
 
     ![Create Azure Container Registry](images/createacr.png)
 
-1. Return to  VSTS, from the **Build** hub, select and edit the **MyShuttle** build. This build definition contains a *maven* task to build the pom.xml file. The maven task has the following settings
+1. Return to  VSTS, from the **Build** hub, select and edit the **MyShuttle** build. This build definition contains a *maven* task to build the pom.xml file. In the  maven task set the following parameter values
 
    |Parameter|Value|Notes|
    |---------|-----|-----|
